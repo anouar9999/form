@@ -19,13 +19,13 @@ const FeedsWidget4: React.FC<Props> = ({className, memberName}) => {
           <div className='d-flex align-items-center flex-grow-1'>
             {/* begin::Avatar */}
             <div className='symbol symbol-45px me-5'>
-              <img src={toAbsoluteUrl('/media/avatars/300-7.jpg')} alt='' />
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwWQfT3ryux4wlUbB8ENCmuISOHlvwZUjpmg&usqp=CAU" alt='' />
             </div>
             {/* end::Avatar */}
 
             {/* begin::Info */}
             <div className='d-flex flex-column'>
-              <a href='#' className='text-gray-800 text-hover-primary fs-6 fw-bold'>
+              <a href='#' className='text-dark text-hover-primary fs-6 fw-bold'>
                 {memberName}
               </a>
               <span className='text-gray-500 fw-semibold'>Last week at 10:00 PM</span>

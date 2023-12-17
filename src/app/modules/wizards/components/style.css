@@ -31,11 +31,15 @@
  body {
 	 margin: 0;
 	 height: 100vh;
-	 
-	 border: 10px solid #ffffff;
+	 /* border: 10px solid #ffffff; */
 	 background-color: #0f1923;
 	 color: #0f1923;
 	 font: 400 22px/26px "Rajdhani", sans-serif;
+	 background: url('https://i.pinimg.com/originals/d3/39/5e/d3395ed9226a8a74c22891f4b2fe688f.png') ; 
+	 -webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: contain;
 }
  .container {
 	 display: flex;
@@ -49,7 +53,7 @@
 	 margin: 0;
 	 width: 830px;
 	 height: 560px;
-	 background-color: white;
+	 /* background-color: transparent; */
 }
  .container div {
 	 box-sizing: border-box;
@@ -165,8 +169,8 @@
 	 font: 700 21rem "Teko", sans-serif;
 	 line-height: 0.8;
 	 text-transform: uppercase;
-	 -webkit-text-fill-color: rgba(0, 0, 0, 0);
-	 -webkit-text-stroke-color: rgba(0, 0, 0, 0.3);
+	 -webkit-text-fill-color: rgba(255, 255, 255, 0);
+	 -webkit-text-stroke-color: rgba(255, 255, 255, 0.3);
 	 -webkit-text-stroke-width: 1px;
 }
  button {
@@ -441,4 +445,41 @@ button:hover .label-text:after {
   .primary .label::before {
 	background-color: var(--v-white);
   }
+  .videoTag {
+	position: fixed;
+	z-index: -1;
+	width: 100vw;
+ }
+
+ .stepper.stepper-pills .stepper-item.current .stepper-icon {
+   
+    background-color: #ff4654;
+    border:  #000000;
+}
+
+.stepper.stepper-links .stepper-nav .stepper-item.current:after {
+    background-color: #ff4654;
+	height: 2px;
+	margin-top: -7px;
+
+}
+.stepper.stepper-links .stepper-nav {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}	
+input[type=file]::file-selector-button {
+	
+
+	
+	background-color: #ff4654;
+	transition: 1s;
+	color: #ece8e1;
+  }
   
+  input[type=file]::file-selector-button:hover {
+	background-color: #81ecec;
+	
+  }

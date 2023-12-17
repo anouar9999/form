@@ -50,6 +50,18 @@ const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
       
     // </div>
 <div className='fv-row col-lg-12'>
+<div className='pb-10 pb-lg-12'>
+        <h2 className='fw-bolder text-white'>Ajouter  Membres</h2>
+
+        <div className='text-gray-500 fw-bold fs-6'>
+          If you need more info, please check out
+          <a href='/dashboard' className='link-primary fw-bolder'>
+            {' '}
+            Help Page
+          </a>
+          .
+        </div>
+      </div>
         
           <div className='col-lg-12 '>
             <Field
@@ -62,13 +74,13 @@ const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
               id='kt_create_account_form_account_type_personal'
             />
             <label
-              className='btn btn-outline btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10'
+              className='btn btn-outline btn-white btn-outline-dashed btn-outline-default p-7 d-flex align-items-center mb-10'
               htmlFor='kt_create_account_form_account_type_personal'
             >
               <KTIcon iconName='add-item' className='fs-3x me-5' />
 
               <span className='d-block fw-bold text-start'>
-                <span className='text-gray-900 fw-bolder d-block fs-4 mb-2'>   Ajouter un Nouveux membre</span>
+                <span className='text-white fw-bolder d-block fs-4 mb-2'>   Ajouter un Nouveux membre</span>
                 
               </span>
             </label>
@@ -95,9 +107,10 @@ const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
        <Form.Label className='fs-6 fw-bold' >Rôle du Joueur</Form.Label>
        <Form.Select aria-label="Default select example">
       <option>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+      <option value="1">Dueliste</option>
+      <option value="2">Initiator</option>
+      <option value="3">Controller</option>
+      <option value="3">Sentinel</option>
     </Form.Select>
      </Form.Group>
      {/* <Form.Group controlId="formBasicEmail">

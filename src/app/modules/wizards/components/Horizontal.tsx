@@ -13,6 +13,7 @@ import {
   inits,
 } from "./CreateAccountWizardHelper";
 import "./style.css";
+
 const Horizontal: FC = () => {
   const stepperRef = useRef<HTMLDivElement | null>(null);
   const [stepper, setStepper] = useState<StepperComponent | null>(null);
@@ -70,45 +71,128 @@ const Horizontal: FC = () => {
       ref={stepperRef}
       className="stepper stepper-pills stepper-column d-flex flex-column flex-xl-row flex-row-fluid overflow-hidden"
       id="kt_create_account_stepper"
+      style={{ margin: "10px 10px" }}
     >
       <div
         style={{
           backgroundImage: `url("https://m.media-amazon.com/images/M/MV5BNmNhM2NjMTgtNmIyZC00ZmVjLTk4YWItZmZjNGY2NThiNDhkXkEyXkFqcGdeQXVyODU4MDU1NjU@._V1_.jpg")`,
-          backgroundSize: "contain",
+          backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
         }}
-        className="card d-flex justify-content-start justify-content-xl-center flex-row-auto w-200 w-xl-400px w-xxl-500px me-9"
+        className="card d-flex  justify-content-start justify-content-xl-center flex-row-auto w-100 w-xl-300px w-xxl-400px me-9"
       >
         {/* begin::Wrapper*/}
 
         {/* end::Wrapper*/}
       </div>
-      <div className="card w-100 w-xl-1000px w-xxl-1200px">
-        <div className="card-body overflow-auto">
+      <div
+        className="card w-100 w-xl-1000px w-xxl-1200px "
+        style={{ backgroundColor: "#131a2c" }}
+      >
+        <div className="card-body overflow-auto border-none ">
           <div
             ref={stepperRef}
             className="stepper stepper-links d-flex flex-column pt-10"
             id="kt_create_account_stepper"
           >
             <div className="stepper-nav mb-5 flex-row">
-              <div
-                className="stepper-item current"
-                data-kt-stepper-element="nav"
-              >
-                <h3 className="stepper-title">Informations sur l'Équipe</h3>
-              </div>
+            <div className='stepper-item current' data-kt-stepper-element='nav'>
+              {/* begin::Wrapper*/}
+              <div className='stepper-wrapper'>
+                {/* begin::Icon*/}
+                <div className='stepper-icon w-30px h-30px'>
+                  <i className='stepper-check fas fa-check'></i>
+                  <span className='stepper-number'>1</span>
+                </div>
+                {/* end::Icon*/}
 
-              <div className="stepper-item" data-kt-stepper-element="nav">
-                <h3 className="stepper-title">Détails du Capitain</h3>
-              </div>
+                {/* begin::Label*/}
+                <div className='stepper-label'>
+                  <h3 className='stepper-title text-white'>Infos sur l'Équipe</h3>
 
-              <div className="stepper-item" data-kt-stepper-element="nav">
-                <h3 className="stepper-title">Business Info</h3>
+                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                </div>
+                {/* end::Label*/}
               </div>
+              {/* end::Wrapper*/}
 
-              <div className="stepper-item" data-kt-stepper-element="nav">
-                <h3 className="stepper-title">Completed</h3>
+              {/* begin::Line*/}
+             
+              {/* end::Line*/}
+            </div>
+
+            <div className='stepper-item ' data-kt-stepper-element='nav'>
+              {/* begin::Wrapper*/}
+              <div className='stepper-wrapper'>
+                {/* begin::Icon*/}
+                <div className='stepper-icon w-30px h-30px'>
+                  <i className='stepper-check fas fa-check'></i>
+                  <span className='stepper-number'>2</span>
+                </div>
+                {/* end::Icon*/}
+
+                {/* begin::Label*/}
+                <div className='stepper-label'>
+                  <h3 className='stepper-title text-white'>Détails du Capitaine
+</h3>
+
+                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                </div>
+                {/* end::Label*/}
               </div>
+              {/* end::Wrapper*/}
+
+              {/* begin::Line*/}
+              {/* end::Line*/}
+            </div>
+
+            <div className='stepper-item ' data-kt-stepper-element='nav'>
+              {/* begin::Wrapper*/}
+              <div className='stepper-wrapper'>
+                {/* begin::Icon*/}
+                <div className='stepper-icon w-30px h-30px'>
+                  <i className='stepper-check fas fa-check'></i>
+                  <span className='stepper-number'>3</span>
+                </div>
+                {/* end::Icon*/}
+
+                {/* begin::Label*/}
+                <div className='stepper-label'>
+                  <h3 className='stepper-title text-white'>les Membres de l'Équipe</h3>
+
+                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                </div>
+                {/* end::Label*/}
+              </div>
+              {/* end::Wrapper*/}
+
+              {/* begin::Line*/}              {/* end::Line*/}
+            </div>
+
+            <div className='stepper-item ' data-kt-stepper-element='nav'>
+              {/* begin::Wrapper*/}
+              <div className='stepper-wrapper'>
+                {/* begin::Icon*/}
+                <div className='stepper-icon w-30px h-30px'>
+                  <i className='stepper-check fas fa-check'></i>
+                  <span className='stepper-number'>4</span>
+                </div>
+                {/* end::Icon*/}
+
+                {/* begin::Label*/}
+                <div className='stepper-label'>
+                  <h3 className='stepper-title text-white'>Accord et Confirmation
+</h3>
+
+                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                </div>
+                {/* end::Label*/}
+              </div>
+              {/* end::Wrapper*/}
+
+              {/* begin::Line*/}
+              {/* end::Line*/}
+            </div>
             </div>
 
             <Formik
@@ -151,16 +235,20 @@ const Horizontal: FC = () => {
                       </button>
                     </div> */}
 
-                    <button className="primary button2 me-3 float-start "  data-kt-stepper-action="previous"  onClick={prevStep} type="button">
-          <div className="label">
-            <span className="hover-effect"></span>
-            <span className="label-text fs-6 fw-bold">
-            <KTIcon iconName="arrow-left" className="fs-4 me-1" />
-                        Back
-              
-              </span>
-          </div>
-        </button>
+                    <button
+                      className="primary button2 me-3 float-start "
+                      data-kt-stepper-action="previous"
+                      onClick={prevStep}
+                      type="button"
+                    >
+                      <div className="label">
+                        <span className="hover-effect"></span>
+                        <span className="label-text fs-6 fw-bold">
+                          <KTIcon iconName="arrow-left" className="fs-4 me-1" />
+                          Back
+                        </span>
+                      </div>
+                    </button>
                     {/* <div>
                       <button
                         type="submit"
@@ -177,11 +265,14 @@ const Horizontal: FC = () => {
                       </button>
                     </div> */}
                   </div>
-                  <button className="primary button2 me-3 float-end " type="submit">
-          <div className="label">
-            <span className="hover-effect"></span>
-            <span className="label-text fs-6 fw-bold">
-            <span className="indicator-label">
+                  <button
+                    className="primary button2 me-3 float-end "
+                    type="submit"
+                  >
+                    <div className="label">
+                      <span className="hover-effect"></span>
+                      <span className="label-text fs-6 fw-bold">
+                        <span className="indicator-label">
                           {!isSubmitButton && "Continue"}
                           {isSubmitButton && "Submit"}
                           <KTIcon
@@ -189,10 +280,9 @@ const Horizontal: FC = () => {
                             className="fs-3 ms-2 me-0"
                           />
                         </span>
-              
-              </span>
-          </div>
-        </button>
+                      </span>
+                    </div>
+                  </button>
                 </Form>
               )}
             </Formik>

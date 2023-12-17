@@ -6,7 +6,7 @@ const Step5: FC = () => {
   return (
     <div className='w-100'>
       <div className='pb-8 pb-lg-10'>
-        <h2 className='fw-bolder text-gray-900'>Your Are Done!</h2>
+        <h2 className='fw-bolder text-white'>Your Are Done!</h2>
 
         <div className='text-gray-500 fw-bold fs-6'>
           If you need more info, please

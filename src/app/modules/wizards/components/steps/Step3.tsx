@@ -1,11 +1,11 @@
 import {FC} from 'react'
 import {Field, ErrorMessage} from 'formik'
 
-const Step3: FC = () => {
+const Step3: FC = () => { 
   return (
     <div className='w-100'>
       <div className='pb-10 pb-lg-12'>
-        <h2 className='fw-bolder text-gray-900'>Informations sur l'Équipe</h2>
+        <h2 className='fw-bolder text-white'>Informations sur l'Équipe</h2>
 
         <div className='text-gray-500 fw-bold fs-6'>
           If you need more info, please check out
@@ -18,9 +18,9 @@ const Step3: FC = () => {
       </div>
 
       <div className='fv-row mb-10'>
-        <label className='fs-6 fw-bold form-label required'>Nom de l'Équipe</label>
+        <label className='fs-6 fw-bold form-label text-white required'>Nom de l'Équipe</label>
 
-        <Field name='businessName'  type='text' className='form-control form-control-lg form-control-solid'  />
+        <Field name='businessName'   placeholder ='Votre Nom' className='form-control form-control-lg form-control-solid'  />
         <div className='text-danger mt-2'>
           <ErrorMessage name='businessName' />
         </div>
@@ -28,7 +28,7 @@ const Step3: FC = () => {
 
       <div className='fv-row mb-10'>
         <label className='d-flex align-items-center form-label'>
-          <span className='fs-6 fw-bold form-label required'>Logo de l'Équipe</span>
+          <span className='fs-6 fw-bold form-label text-white required'>Logo de l'Équipe</span>
         </label>
 
         {/* <Field
@@ -43,7 +43,7 @@ const Step3: FC = () => {
           <ErrorMessage name='businessDescriptor' />
         </div>
 
-        <div className='form-text'>
+        <div className='form-text text-white'>
           Customers will see this shortened version of your statement descriptor
         </div>
       </div>
@@ -70,13 +70,14 @@ const Step3: FC = () => {
       </div> */}
 
       <div className='fv-row mb-10'>
-        <label className='fs-6 fw-bold form-label required'>Description de l'Équipe</label>
+        <label className='fs-6 fw-bold form-label text-white required'>Description de l'Équipe</label>
 
         <Field
           as='textarea'
           name='businessDescription'
           className='form-control form-control-lg form-control-solid'
           rows={3}
+          placeholder ='description'   
         ></Field>
       </div>
 
