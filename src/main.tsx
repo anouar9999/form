@@ -20,26 +20,33 @@ import './_metronic/assets/sass/style.scss'
 import './_metronic/assets/sass/plugins.scss'
 import {AppRoutes} from './app/routing/AppRoutes'
 import {AuthProvider, setupAxios} from './app/modules/auth'
+import { Horizontal } from './app/modules/wizards/components/Horizontal'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 /**
  * Creates `axios-mock-adapter` instance for provided `axios` instance, add
  * basic Metronic mocks and returns it.
  *
- * @see https://github.com/ctimmerm/axios-mock-adapter
- */
-/**
- * Inject Metronic interceptors for axios.
- *
- * @see https://github.com/axios/axios#interceptors
- */
-setupAxios(axios)
-Chart.register(...registerables)
+//  * @see https://github.com/ctimmerm/axios-mock-adapter
+//  */
+// /**
+//  * Inject Metronic interceptors for axios.
+//  *
+//  * @see https://github.com/axios/axios#interceptors
+//  */
+// setupAxios(axios)
+// Chart.register(...registerables)
 
 const queryClient = new QueryClient()
 const container = document.getElementById('root')
 if (container) {
   createRoot(container).render(
   
-          <AppRoutes />
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Horizontal />}>
+        </Route>
+        </Routes>
+        </BrowserRouter>
        
   )
 }
