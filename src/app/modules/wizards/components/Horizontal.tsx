@@ -89,7 +89,7 @@ const Horizontal: FC = () => {
         className="card w-100 w-xl-1000px w-xxl-1200px "
         style={{ backgroundColor: "#131a2c" }}
       >
-        <div className="card-body overflow-auto border-none ">
+        <div className="card-body overflow border-none ">
           <div
             ref={stepperRef}
             className="stepper stepper-links d-flex flex-column pt-10"
@@ -108,9 +108,9 @@ const Horizontal: FC = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h3 className='stepper-title text-white'>Infos sur l'Équipe</h3>
+                  <h3 className='stepper-title text-white display'>Infos sur l'Équipe</h3>
 
-                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                  <div className='stepper-desc fw-semibold display'>Setup Your Account Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -133,10 +133,10 @@ const Horizontal: FC = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h3 className='stepper-title text-white'>Détails du Capitaine
+                  <h3 className='stepper-title text-white display'>Détails du Capitaine
 </h3>
 
-                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                  <div className='stepper-desc fw-semibold display'>Setup Your Account Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -158,9 +158,9 @@ const Horizontal: FC = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h3 className='stepper-title text-white'>les Membres de l'Équipe</h3>
+                  <h3 className='stepper-title text-white display'>les Membres de l'Équipe</h3>
 
-                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                  <div className='stepper-desc fw-semibold display'>Setup Your Account Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
@@ -181,10 +181,10 @@ const Horizontal: FC = () => {
 
                 {/* begin::Label*/}
                 <div className='stepper-label'>
-                  <h3 className='stepper-title text-white'>Accord et Confirmation
+                  <h3 className='stepper-title text-white display'>Accord et Confirmation
 </h3>
 
-                  <div className='stepper-desc fw-semibold'>Setup Your Account Details</div>
+                  <div className='stepper-desc fw-semibold display'>Setup Your Account Details</div>
                 </div>
                 {/* end::Label*/}
               </div>
